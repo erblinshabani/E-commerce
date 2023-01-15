@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./styles//menu.css">
+    <link rel="shortcut icon" href="./images/Xizt.png">
+</head>
+<body onload="Product.display()">
+    <nav>
+        <h1>Xizt</h1>
+        <ul id="nav-list">
+            <li><a href="./E-commerce.html">First Page</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a class="cart">Cart</a></li>
+            <li><a href="./Log-In.html" id="buy-btn">Log In</a></li>
+            <li id="changeThemeColor">Change Theme</li>
+        </ul>
+        <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main id="products">
+        <h1 id="menu-h1">Products</h1>
+        <div class="category">
+            <button id="pizza">Pizza</button>
+            <button id="shoes">Shoes</button>
+            <button id="pc">Pc</button>
+        </div>
+        <div id="menuList" class="menuList">
+        </div>
+    </main>
+
+    <div class="orderProducts">
+        <div class="total">
+            <h1>No Product Added</h1>
+        </div>
+    </div>
+
+    <script src="menuItem.js"></script>
+    <script src="./scripts/Toggle.js"></script>
+    <script src="./scripts/menu.js"></script>
+</body>
+</html>

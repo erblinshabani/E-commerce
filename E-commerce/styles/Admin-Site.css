@@ -1,0 +1,347 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --body-background-color: #f1f1f1;
+    --nav-background-color: #fff;
+    --font-color: #111;
+    --hover: rgba(54, 54, 240, 0.827);
+    --text-shadow: rgba(0, 0, 255, 0.563);
+    --box-shadow: rgba(0, 0, 0, 0.2);
+    --buy-btn: red;
+    --price: green
+}
+
+.darkTheme {
+    --body-background-color: #222;
+    --nav-background-color: #111;
+    --font-color: #fff;
+    --hover:#ef5a2c;
+    --text-shadow: #ef6035b4;
+    --box-shadow: #f13012ce;
+    --buy-btn: #de2b14;
+    --price: orange
+}
+
+body {
+    background-color: var(--body-background-color);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+
+nav h1 {
+    margin-left: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to top, #ff0844 0%, #ef5a2c 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 12px;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--font-color)
+}
+
+nav ul li a:hover {
+    color: var(--hover)
+}
+
+#buy-btn {
+    background-color: var(--buy-btn);
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff
+}
+
+#buy-btn:hover {
+    opacity: 0.8;
+    transition: all 0.1s;
+}
+
+nav ul li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--font-color)
+}
+
+.hamburger {
+    display: none;
+}
+
+#changeThemeColor {
+    padding: 0;
+}
+
+#changeThemeColor:hover {
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    color: var(--hover);
+    box-shadow: 0px 0px 15px var(--text-shadow);
+    transition: all 0.2s;
+}
+
+main {
+    margin-top: 200px;
+    background-color: var(--nav-background-color);
+    padding: 40px 0 150px 0;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#menu-h1 {
+    text-align: center;
+    font-size: 36px;
+    font-family: cursive;
+    margin: 80px 0 40px 0;
+    color: var(--font-color);
+}
+
+#menu-h1:hover {
+    text-decoration: underline;
+}
+
+.menuList {
+    display: grid;
+}
+
+/* .pizza {
+    background-image: url('pizza1.jpg');
+} */
+
+.menuList {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.menuItem {
+    border-radius: 15px;
+    width: 300px;
+    height: 350px;
+    margin: 30px 20px;
+    box-shadow: 0px 3px 15px var(--box-shadow);
+    background-color: var(--nav-background-color);
+    color: var(--font-color);
+}
+
+.menuItem:hover {
+    box-shadow: 0px 3px 15px var(--hover);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.menuItem div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menuItem h1, .menuItem h3 {
+    margin-left: 15px;
+}
+
+.menuItem h3 {
+    font-weight: 100;
+    color: var(--price);
+    margin-bottom: 10px;
+}
+
+.menuItem button {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0.92);
+    border-radius: 10px;
+    opacity: 0.98;
+    font-size: 16px;
+    border: 0;
+    padding: 5px 17px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 7px;
+}
+
+.menuItem button:hover {
+    background-color: orange;
+    transition: all ease 0.4s;
+}
+
+.menuItem button:focus {
+    background-color: green;
+}
+
+.menuButton {
+    display: inline;
+    margin-left: 90px;
+}
+
+.menuButton button {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav h1 {
+        font-size: 32px;
+    }
+
+    #nav-list {
+        display: none;
+    }
+    
+    .active {
+        text-align: center;
+        
+        position: fixed;
+        display: block !important;
+        top: 70px !important;
+        background-color: var(--nav-background-color);
+        padding: 0;
+        margin: 0px !important;
+    }
+
+    .active li {
+        display: block;
+        padding: 40px !important;
+        
+    }
+
+    .active li a {
+        padding: 10px;
+        margin: 10px 0;
+        font-size: 25px;
+    }
+
+    #buy-btn {
+        display: block;
+        padding: 15px;
+        width: 250px;
+        font-size: 25px;
+        margin: 0 auto !important;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger span {
+        width: 29px;
+        height: 4px;
+        background-color: var(--font-color);
+        display: block;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+
+    #changeThemeColor {
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    #changeThemeColor:hover {
+        font-size: 24px;
+    }
+
+    .hamburger-active span:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger-active span:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger-active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .menuItem {
+        margin: 24px -15px
+    }
+    
+}
+
+@media only screen and (max-width: 980px) {
+    nav ul {
+        margin: 15px;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    #buy-btn {
+        padding: 9px 24px;
+        font-size: 18px;
+    }
+
+    #changeThemeColor {
+        font-size: 17px;
+    }
+
+    #changeThemeColor:hover {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    footer ul {
+        margin-left: 50px;
+    }
+}
+  
+@media only screen and (max-width: 1300px) {
+    .menuList {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .menuList {
+    grid-template-columns: 1fr;
+    }
+    
+}

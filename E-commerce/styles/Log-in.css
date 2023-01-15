@@ -1,0 +1,128 @@
+body {
+    background-color: #f1f1f1;
+}
+
+form {
+    margin: 90px auto;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 23px;
+    position: relative;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 20px 0 0 70px;
+}
+
+form input{
+    display: block;
+    margin: 20px auto;
+    width: 360px;
+    height: 33px;
+}
+
+form input:nth-child(1) {
+    margin-top: 80px;
+}
+
+form a {
+    display: block;
+    width: 280px;
+    margin: 45px auto;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 4px;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#hidden {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(1, 146, 1, 0.642);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 15px 15px;
+
+    color: #f1f1f1;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        margin: 60px auto;
+        width: 300px;
+        height: 500px;
+        background-color: #fff;
+        padding: 30px;
+        border: 1px solid black;
+        border-radius: 23px;
+    }
+    
+    form h1 {
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.592);
+        padding: 15px 0 30px 0;
+        margin-bottom: 60px;
+    }
+
+    form label {
+        display: none
+    }
+    
+    form input{
+        display: block;
+        margin: 30px auto;
+        width: 260px;
+        height: 33px;
+    }
+    
+    form input:nth-child(1) {
+        margin-top: 80px;
+    }
+    
+    form a {
+        display: block;
+        width: 280px;
+        margin: 45px auto;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 4px;
+        background-color: lightblue;
+        text-align: center;
+        border-radius: 15px;
+    }
+    
+    #hidden {
+        width: 100%;
+        height: 60px;
+        background-color: rgba(1, 146, 1, 0.642);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 15px 15px;
+
+        color: #f1f1f1;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

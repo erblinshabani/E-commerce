@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erblin</title>
+    <link rel="stylesheet" href="styles/Admin-Site.css">
+    <link rel="shortcut icon" href="./images/Xizt.png">
+</head>
+<body onload="Product.display()">
+    <nav>
+        <h1>Xizt</h1>
+        <ul id="nav-list">
+            <li><a href="./E-commerce.html">First Page</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="./E-commerce.html" id="buy-btn">Log Out</a></li>
+            <li id="changeThemeColor">Change Theme</li>
+        </ul>
+        <div id="hamburger" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main id="products">
+        <h1 id="menu-h1">Products - Admin</h1>
+        <div id="menuList" class="menuList">
+        </div>
+    </main>
+
+    <script src="menuItem.js"></script>
+    <script src="./scripts/Admin-Site.js"></script>
+</body>
+</html>
